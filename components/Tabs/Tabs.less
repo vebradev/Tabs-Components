@@ -1,5 +1,6 @@
 .tabs {
   width: 100%;
+
   .tabs-items {
     width: 100%;
     height: 300px;
@@ -7,18 +8,25 @@
     justify-content: center;
     padding-top: 60px;
   }
-  .tabs-item {
-    display: none; 
 
+  .tabs-item {
+    display: none;
     width: 75%;
+    position: relative;
+    bottom: -200px;
+    transition: all .5s ease-in-out;
+
     .tabs-item-title {
       font-size: 24px;
       font-weight: bold;
       padding-bottom: 10px;
     }
   }
+
   .tabs-item-selected {
     display: block;
+    bottom: 0;
+    transition: all .5s ease-in-out;
   }
 
   .tabs-links {
@@ -47,5 +55,3 @@
     }
   }
 }
-
-
