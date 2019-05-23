@@ -16,6 +16,9 @@
   .dropdown-content {
     width: 100%;
     position: absolute;
+    overflow: hidden;
+    max-height: 400px;
+    transition: all .5s ease-in-out;
     background-color: @white;
     display: flex;
     flex-direction: column;
@@ -36,7 +39,9 @@
     }
   }
   .dropdown-hidden {
-    display: none;
+    max-height: 0;
+	  transition: all .5s ease-in-out;
+    opacity: 0;
   }
 }
 
